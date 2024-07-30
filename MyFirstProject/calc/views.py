@@ -13,4 +13,7 @@ def add(request):
     return render(request,'results.html',{'result':val3, 'username':name})
  
 # def inputname(request):
+
+def dashboard(request):
+    return render(request,'dashboard.html')
     
