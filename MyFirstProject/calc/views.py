@@ -16,4 +16,12 @@ def add(request):
 
 def dashboard(request):
     return render(request,'dashboard.html')
+
+def products(request):
+    return render(request,'products.html',{'products':products})
+
+from .models import *
+def dashboard(request):
+    customers=Customer.objects.all()
+    return render(request,'dashboard.html',{'customers':customers})
     

@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'calc',
 ]
 
 MIDDLEWARE = [
@@ -118,9 +119,6 @@ USE_TZ = True
 
 # URL prefix for static files
 STATIC_URL = '/static/'
-
-# Directory to collect static files for deployment
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Additional static file directories (if needed)
 STATICFILES_DIRS = [
